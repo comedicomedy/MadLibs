@@ -8,6 +8,7 @@ namespace MadLibs
     
     class Program
     {
+        //Creates an array for the Questions
         static string[] types =
         {
             "Enter a Noun: ", "Enter a Verb: ", "Enter an Adverb: ", "Enter an Adjective: ", "Enter a Name: ", "Enter a Body Part: ",
@@ -16,11 +17,13 @@ namespace MadLibs
         
         static void Main(string[] args)
         {
+            //Messes with the Console
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
             Console.ForegroundColor = ConsoleColor.White;
             Console.Title = "MadLibs";
             
 
+            //Introduction
             Console.WriteLine("Welcome to MADLIBS! \nThe Crazy Word Game \n\nDo you know how to play?");
             string yesOrNo = Console.ReadLine();
             switch (yesOrNo)
@@ -49,6 +52,7 @@ namespace MadLibs
             Console.ReadKey();
         }
 
+        //The first Madlib
         static void FirstMadLib()
         {
             Console.Write(types[4]);
